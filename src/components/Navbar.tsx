@@ -1,8 +1,19 @@
 import { Instagram, Linkedin, Twitter } from "lucide-react";
+import { useState, useEffect } from "react";
 
 export function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="fixed top-0 z-50 w-full px-8 py-4 md:px-28 bg-transparent">
+    <nav className={`fixed top-0 z-50 w-full px-8 py-4 md:px-28 transition-all duration-500 ${scrolled ? "bg-background/70 backdrop-blur-md border-b border-white/5 py-3" : "bg-transparent"}`}>
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="relative flex items-center justify-center w-7 h-7 rounded-full border-2 border-foreground/60">

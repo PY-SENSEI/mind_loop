@@ -49,6 +49,10 @@
     --hero-subtitle: 210 17% 95%;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
