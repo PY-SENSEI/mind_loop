@@ -30,25 +30,25 @@ export function HeroSection() {
           <span className="text-muted-foreground text-sm">7,000+ people already subscribed</span>
         </motion.div>
 
-        <motion.h1 {...fadeUp(0.2)} className="text-5xl md:text-7xl lg:text-8xl font-medium tracking-[-2px] mb-6">
+        <motion.h1 {...fadeUp(0.2)} className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium tracking-tight md:tracking-[-2px] mb-6 px-4">
           Get <span className="font-serif italic font-normal">Inspired</span> with Us
         </motion.h1>
 
-        <motion.p {...fadeUp(0.3)} className="text-lg text-hero-subtitle max-w-2xl mb-12">
+        <motion.p {...fadeUp(0.3)} className="text-base md:text-lg text-hero-subtitle max-w-2xl mb-12 px-6">
           Join our feed for meaningful updates, news around technology and a shared journey toward depth and direction.
         </motion.p>
 
-        <motion.div {...fadeUp(0.4)} className="w-full max-w-lg">
-          <div className="liquid-glass rounded-full p-2 flex items-center">
+        <motion.div {...fadeUp(0.4)} className="w-full max-w-lg px-4">
+          <div className="liquid-glass rounded-2xl md:rounded-full p-2 flex flex-col md:flex-row items-center gap-2 md:gap-0">
             <input 
               type="email" 
               placeholder="Enter your email..." 
-              className="flex-1 bg-transparent border-none outline-none px-6 text-foreground placeholder:text-muted-foreground"
+              className="w-full md:flex-1 bg-transparent border-none outline-none px-6 py-3 md:py-0 text-foreground placeholder:text-muted-foreground text-center md:text-left"
             />
             <motion.button 
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
-              className="bg-foreground text-background rounded-full px-8 py-3 font-medium text-sm"
+              className="w-full md:w-auto bg-foreground text-background rounded-xl md:rounded-full px-8 py-3 font-medium text-sm transition-colors"
             >
               SUBSCRIBE
             </motion.button>

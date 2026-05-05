@@ -18,7 +18,7 @@ export function SolutionSection() {
           </h2>
         </motion.div>
 
-        <motion.div {...fadeUp(0.2)} className="w-full aspect-[3/1] rounded-2xl overflow-hidden mb-16 relative">
+        <motion.div {...fadeUp(0.2)} className="w-full aspect-video md:aspect-[3/1] rounded-2xl overflow-hidden mb-12 md:mb-16 relative">
           <video
             autoPlay
             loop

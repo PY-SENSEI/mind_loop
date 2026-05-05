@@ -17,8 +17,8 @@ export function MissionSection() {
   const highlightWords = ["curiosity", "meets", "clarity"];
 
   return (
-    <section ref={containerRef} className="w-full px-8 md:px-28 pt-0 pb-32 md:pb-44 flex flex-col items-center">
-      <div className="w-full max-w-[800px] aspect-square rounded-full overflow-hidden mb-24 relative">
+    <section ref={containerRef} className="w-full px-8 md:px-28 pt-0 pb-32 md:pb-44 flex flex-col items-center overflow-hidden">
+      <div className="w-full max-w-[400px] md:max-w-[800px] aspect-square rounded-full overflow-hidden mb-16 md:mb-24 relative shadow-2xl shadow-white/5">
         <video
           autoPlay
           loop

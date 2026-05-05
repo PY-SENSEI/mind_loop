@@ -18,9 +18,9 @@ export function SearchChangedSection() {
         The way we find information is evolving. Are you keeping up with the platforms defining the future of discovery?
       </motion.p>
 
-      <div className="grid md:grid-cols-3 gap-12 md:gap-8 mb-20 max-w-6xl mx-auto">
+      <div className="grid md:grid-cols-3 gap-16 md:gap-8 mb-20 max-w-6xl mx-auto">
         <motion.div {...fadeUp(0.3)} className="flex flex-col items-center">
-          <div className="w-[200px] h-[200px] mb-6 rounded-2xl overflow-hidden bg-card flex items-center justify-center">
+          <div className="w-full max-w-[200px] aspect-square mb-6 rounded-2xl overflow-hidden bg-card flex items-center justify-center">
             <img src="https://picsum.photos/seed/chatgpt/400/400" alt="ChatGPT" className="w-full h-full object-cover opacity-80" />
           </div>
           <h3 className="font-semibold text-base mb-2">ChatGPT</h3>
@@ -28,7 +28,7 @@ export function SearchChangedSection() {
         </motion.div>
 
         <motion.div {...fadeUp(0.4)} className="flex flex-col items-center">
-          <div className="w-[200px] h-[200px] mb-6 rounded-2xl overflow-hidden bg-card flex items-center justify-center">
+          <div className="w-full max-w-[200px] aspect-square mb-6 rounded-2xl overflow-hidden bg-card flex items-center justify-center">
             <img src="https://picsum.photos/seed/perplexity/400/400" alt="Perplexity" className="w-full h-full object-cover opacity-80" />
           </div>
           <h3 className="font-semibold text-base mb-2">Perplexity</h3>
@@ -36,7 +36,7 @@ export function SearchChangedSection() {
         </motion.div>
 
         <motion.div {...fadeUp(0.5)} className="flex flex-col items-center">
-          <div className="w-[200px] h-[200px] mb-6 rounded-2xl overflow-hidden bg-card flex items-center justify-center">
+          <div className="w-full max-w-[200px] aspect-square mb-6 rounded-2xl overflow-hidden bg-card flex items-center justify-center">
             <img src="https://picsum.photos/seed/googleai/400/400" alt="Google AI" className="w-full h-full object-cover opacity-80" />
           </div>
           <h3 className="font-semibold text-base mb-2">Google AI</h3>
